@@ -93,3 +93,12 @@
 - [x] Configures S3 export destination for classification results
 - [x] Handles disabling Macie and removing members on delete
 - [x] Lambda handler processes CloudFormation Create/Update/Delete events
+
+## Task 11: SecurityHub organization configuration
+
+### Acceptance Criteria
+- [x] Sets up delegated administrator account for SecurityHub in specified regions
+- [x] Enables and configures security standards (CIS, PCI, NIST, Security Best Practices)
+- [x] Creates member accounts from organization accounts
+- [x] Handles disabling SecurityHub and removing members on delete
+- [x] Lambda handler processes CloudFormation Create/Update/Delete events
