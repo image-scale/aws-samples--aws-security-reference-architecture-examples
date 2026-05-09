@@ -54,8 +54,16 @@
 ## Task 6: IAM password policy configuration
 
 ### Acceptance Criteria
-- [ ] update_password_policy() sets password policy settings via IAM API
-- [ ] Accepts all standard password policy parameters (min length, require uppercase, etc.)
-- [ ] Boolean string values ("true"/"false") are correctly converted to Python booleans
-- [ ] Integer values (max age, reuse prevention) are correctly converted to integers
+- [x] update_password_policy() sets password policy settings via IAM API
+- [x] Accepts all standard password policy parameters (min length, require uppercase, etc.)
+- [x] Boolean string values ("true"/"false") are correctly converted to Python booleans
+- [x] Integer values (max age, reuse prevention) are correctly converted to integers
+- [x] Lambda handler processes CloudFormation Create/Update events
+
+## Task 7: S3 block public access configuration
+
+### Acceptance Criteria
+- [ ] set_block_public_access() enables S3 Block Public Access settings at account level
+- [ ] Configures all four BPA settings (BlockPublicAcls, IgnorePublicAcls, BlockPublicPolicy, RestrictPublicBuckets)
+- [ ] Works across multiple regions when provided a region list
 - [ ] Lambda handler processes CloudFormation Create/Update events

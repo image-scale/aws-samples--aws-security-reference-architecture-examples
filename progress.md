@@ -34,3 +34,10 @@
 **Commit**: Add service-linked role management for creating AWS service-linked roles
 **Acceptance**: 4/4 criteria met
 **Verification**: tests FAIL on previous state (ModuleNotFoundError: sra.iam), PASS on current state
+
+## Round 6
+**Task**: Task 6 — Implement IAM password policy configuration
+**Files created**: sra/password_policy.py, tests/test_password_policy.py
+**Commit**: Add IAM password policy configuration that sets account-level password policy settings
+**Acceptance**: 5/5 criteria met
+**Verification**: tests FAIL on previous state (ModuleNotFoundError: sra.password_policy), PASS on current state
