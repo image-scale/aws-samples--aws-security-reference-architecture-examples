@@ -27,9 +27,18 @@
 ## Task 3: AWS Organizations account enumeration
 
 ### Acceptance Criteria
-- [ ] get_organization_accounts() returns a list of all active accounts with AccountId and Email
-- [ ] Accounts with status other than ACTIVE are excluded from results
-- [ ] get_organization_accounts(exclude_accounts=["123..."]) excludes specified account IDs
-- [ ] get_account_ids(accounts) extracts just the account IDs from the account list
-- [ ] When passed an empty list, get_account_ids calls get_organization_accounts internally
-- [ ] Pagination is handled correctly for organizations with many accounts
+- [x] get_organization_accounts() returns a list of all active accounts with AccountId and Email
+- [x] Accounts with status other than ACTIVE are excluded from results
+- [x] get_organization_accounts(exclude_accounts=["123..."]) excludes specified account IDs
+- [x] get_account_ids(accounts) extracts just the account IDs from the account list
+- [x] When passed an empty list, get_account_ids calls get_organization_accounts internally
+- [x] Pagination is handled correctly for organizations with many accounts
+
+## Task 4: Region management utilities
+
+### Acceptance Criteria
+- [ ] get_enabled_regions() returns list of regions where STS endpoint is reachable
+- [ ] Customer-provided region string is parsed and returned when provided
+- [ ] Regions that return InvalidClientTokenId are excluded as disabled
+- [ ] Invalid regions are excluded with appropriate logging
+- [ ] parse_region_list("us-east-1, eu-west-1") returns ["us-east-1", "eu-west-1"]

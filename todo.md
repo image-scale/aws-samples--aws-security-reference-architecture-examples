@@ -8,9 +8,9 @@ Build the AWS SRA library starting with core user-facing functionality. The prim
 
 - [x] Task 2: Implement cross-account session management that allows assuming IAM roles in different AWS accounts and returning boto3 sessions for those accounts. Users need to configure resources in member accounts by assuming a configuration role.
 
-- [>] Task 3: Implement AWS Organizations account enumeration that retrieves all active accounts in an organization, with optional exclusion of specific accounts. This enables batch configuration of security services across all member accounts.
+- [x] Task 3: Implement AWS Organizations account enumeration that retrieves all active accounts in an organization, with optional exclusion of specific accounts. This enables batch configuration of security services across all member accounts.
 
-- [ ] Task 4: Implement region management utilities that determine which AWS regions are enabled for the account, supporting both customer-specified regions and automatic detection of available regions via STS endpoint probing.
+- [>] Task 4: Implement region management utilities that determine which AWS regions are enabled for the account, supporting both customer-specified regions and automatic detection of available regions via STS endpoint probing.
 
 - [ ] Task 5: Implement service-linked role management that creates AWS service-linked roles if they don't exist. Many AWS security services require service-linked roles before they can be configured.
 

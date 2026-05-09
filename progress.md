@@ -13,3 +13,10 @@
 **Commit**: Add cross-account session management for assuming IAM roles in different AWS accounts
 **Acceptance**: 6/6 criteria met
 **Verification**: tests FAIL on previous state (ModuleNotFoundError: sra.sessions), PASS on current state
+
+## Round 3
+**Task**: Task 3 — Implement AWS Organizations account enumeration
+**Files created**: sra/organizations.py, tests/test_organizations.py
+**Commit**: Add AWS Organizations account enumeration that retrieves all active accounts in an organization
+**Acceptance**: 6/6 criteria met
+**Verification**: tests FAIL on previous state (ModuleNotFoundError: sra.organizations), PASS on current state
