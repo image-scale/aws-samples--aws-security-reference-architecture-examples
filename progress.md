@@ -20,3 +20,10 @@
 **Commit**: Add AWS Organizations account enumeration that retrieves all active accounts in an organization
 **Acceptance**: 6/6 criteria met
 **Verification**: tests FAIL on previous state (ModuleNotFoundError: sra.organizations), PASS on current state
+
+## Round 4
+**Task**: Task 4 — Implement region management utilities
+**Files created**: sra/regions.py, tests/test_regions.py
+**Commit**: Add region management utilities for determining which AWS regions are enabled
+**Acceptance**: 5/5 criteria met
+**Verification**: tests FAIL on previous state (ModuleNotFoundError: sra.regions), PASS on current state

@@ -37,8 +37,16 @@
 ## Task 4: Region management utilities
 
 ### Acceptance Criteria
-- [ ] get_enabled_regions() returns list of regions where STS endpoint is reachable
-- [ ] Customer-provided region string is parsed and returned when provided
-- [ ] Regions that return InvalidClientTokenId are excluded as disabled
-- [ ] Invalid regions are excluded with appropriate logging
-- [ ] parse_region_list("us-east-1, eu-west-1") returns ["us-east-1", "eu-west-1"]
+- [x] get_enabled_regions() returns list of regions where STS endpoint is reachable
+- [x] Customer-provided region string is parsed and returned when provided
+- [x] Regions that return InvalidClientTokenId are excluded as disabled
+- [x] Invalid regions are excluded with appropriate logging
+- [x] parse_region_list("us-east-1, eu-west-1") returns ["us-east-1", "eu-west-1"]
+
+## Task 5: Service-linked role management
+
+### Acceptance Criteria
+- [ ] create_service_linked_role() creates a role for a given service principal
+- [ ] If the role already exists, the function returns without error (idempotent)
+- [ ] NoSuchEntityException is handled to check if role exists first
+- [ ] The function accepts role name, service principal, and optional description

@@ -10,9 +10,9 @@ Build the AWS SRA library starting with core user-facing functionality. The prim
 
 - [x] Task 3: Implement AWS Organizations account enumeration that retrieves all active accounts in an organization, with optional exclusion of specific accounts. This enables batch configuration of security services across all member accounts.
 
-- [>] Task 4: Implement region management utilities that determine which AWS regions are enabled for the account, supporting both customer-specified regions and automatic detection of available regions via STS endpoint probing.
+- [x] Task 4: Implement region management utilities that determine which AWS regions are enabled for the account, supporting both customer-specified regions and automatic detection of available regions via STS endpoint probing.
 
-- [ ] Task 5: Implement service-linked role management that creates AWS service-linked roles if they don't exist. Many AWS security services require service-linked roles before they can be configured.
+- [>] Task 5: Implement service-linked role management that creates AWS service-linked roles if they don't exist. Many AWS security services require service-linked roles before they can be configured.
 
 - [ ] Task 6: Implement IAM password policy configuration that sets account-level password policy settings (minimum length, character requirements, expiration, reuse prevention) based on CloudFormation custom resource parameters.
 
