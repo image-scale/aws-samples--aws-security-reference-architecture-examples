@@ -6,3 +6,10 @@
 **Commit**: Add parameter validation capabilities for validating CloudFormation custom resource input parameters against regex patterns
 **Acceptance**: 10/10 criteria met
 **Verification**: tests FAIL on previous state (ModuleNotFoundError), PASS on current state
+
+## Round 2
+**Task**: Task 2 — Implement cross-account session management
+**Files created**: sra/sessions.py, tests/test_sessions.py
+**Commit**: Add cross-account session management for assuming IAM roles in different AWS accounts
+**Acceptance**: 6/6 criteria met
+**Verification**: tests FAIL on previous state (ModuleNotFoundError: sra.sessions), PASS on current state

@@ -6,9 +6,9 @@ Build the AWS SRA library starting with core user-facing functionality. The prim
 ## Tasks
 - [x] Task 1: Implement parameter validation utilities that verify CloudFormation custom resource parameters against regex patterns, raising clear errors for invalid inputs. Users pass parameters like account IDs (12 digits), role names, boolean strings (true/false), and ARNs that must be validated before service configuration proceeds.
 
-- [>] Task 2: Implement cross-account session management that allows assuming IAM roles in different AWS accounts and returning boto3 sessions for those accounts. Users need to configure resources in member accounts by assuming a configuration role.
+- [x] Task 2: Implement cross-account session management that allows assuming IAM roles in different AWS accounts and returning boto3 sessions for those accounts. Users need to configure resources in member accounts by assuming a configuration role.
 
-- [ ] Task 3: Implement AWS Organizations account enumeration that retrieves all active accounts in an organization, with optional exclusion of specific accounts. This enables batch configuration of security services across all member accounts.
+- [>] Task 3: Implement AWS Organizations account enumeration that retrieves all active accounts in an organization, with optional exclusion of specific accounts. This enables batch configuration of security services across all member accounts.
 
 - [ ] Task 4: Implement region management utilities that determine which AWS regions are enabled for the account, supporting both customer-specified regions and automatic detection of available regions via STS endpoint probing.
 

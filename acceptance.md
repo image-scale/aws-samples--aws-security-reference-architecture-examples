@@ -17,9 +17,19 @@
 ## Task 2: Cross-account session management
 
 ### Acceptance Criteria
-- [ ] assume_role("MyRole", "session-name", "123456789012") calls STS assume_role and returns a boto3 Session
-- [ ] The returned session uses the temporary credentials from the assume_role response
-- [ ] When account_id is not provided, it extracts the account from the current caller identity
-- [ ] The function logs the assumed role ARN
-- [ ] Role ARN is correctly constructed with the account ID and partition
-- [ ] Supports different AWS partitions (aws, aws-us-gov, aws-cn)
+- [x] assume_role("MyRole", "session-name", "123456789012") calls STS assume_role and returns a boto3 Session
+- [x] The returned session uses the temporary credentials from the assume_role response
+- [x] When account_id is not provided, it extracts the account from the current caller identity
+- [x] The function logs the assumed role ARN
+- [x] Role ARN is correctly constructed with the account ID and partition
+- [x] Supports different AWS partitions (aws, aws-us-gov, aws-cn)
+
+## Task 3: AWS Organizations account enumeration
+
+### Acceptance Criteria
+- [ ] get_organization_accounts() returns a list of all active accounts with AccountId and Email
+- [ ] Accounts with status other than ACTIVE are excluded from results
+- [ ] get_organization_accounts(exclude_accounts=["123..."]) excludes specified account IDs
+- [ ] get_account_ids(accounts) extracts just the account IDs from the account list
+- [ ] When passed an empty list, get_account_ids calls get_organization_accounts internally
+- [ ] Pagination is handled correctly for organizations with many accounts
