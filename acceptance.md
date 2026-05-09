@@ -75,3 +75,12 @@
 - [x] Creates SSM parameters with account data (audit account, log archive account)
 - [x] Creates SSM parameters with region data (enabled regions, customer regions)
 - [x] Lambda handler processes CloudFormation Create/Update events
+
+## Task 9: GuardDuty organization configuration
+
+### Acceptance Criteria
+- [x] Sets up delegated administrator account for GuardDuty in specified regions
+- [x] Enables GuardDuty features (S3 logs, EKS audit, malware protection, runtime monitoring)
+- [x] Creates member accounts from organization accounts
+- [x] Configures publishing destination for findings (S3 bucket with KMS encryption)
+- [x] Lambda handler processes CloudFormation Create/Update/Delete events
