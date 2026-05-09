@@ -46,7 +46,16 @@
 ## Task 5: Service-linked role management
 
 ### Acceptance Criteria
-- [ ] create_service_linked_role() creates a role for a given service principal
-- [ ] If the role already exists, the function returns without error (idempotent)
-- [ ] NoSuchEntityException is handled to check if role exists first
-- [ ] The function accepts role name, service principal, and optional description
+- [x] create_service_linked_role() creates a role for a given service principal
+- [x] If the role already exists, the function returns without error (idempotent)
+- [x] NoSuchEntityException is handled to check if role exists first
+- [x] The function accepts role name, service principal, and optional description
+
+## Task 6: IAM password policy configuration
+
+### Acceptance Criteria
+- [ ] update_password_policy() sets password policy settings via IAM API
+- [ ] Accepts all standard password policy parameters (min length, require uppercase, etc.)
+- [ ] Boolean string values ("true"/"false") are correctly converted to Python booleans
+- [ ] Integer values (max age, reuse prevention) are correctly converted to integers
+- [ ] Lambda handler processes CloudFormation Create/Update events

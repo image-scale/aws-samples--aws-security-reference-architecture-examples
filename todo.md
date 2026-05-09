@@ -12,9 +12,9 @@ Build the AWS SRA library starting with core user-facing functionality. The prim
 
 - [x] Task 4: Implement region management utilities that determine which AWS regions are enabled for the account, supporting both customer-specified regions and automatic detection of available regions via STS endpoint probing.
 
-- [>] Task 5: Implement service-linked role management that creates AWS service-linked roles if they don't exist. Many AWS security services require service-linked roles before they can be configured.
+- [x] Task 5: Implement service-linked role management that creates AWS service-linked roles if they don't exist. Many AWS security services require service-linked roles before they can be configured.
 
-- [ ] Task 6: Implement IAM password policy configuration that sets account-level password policy settings (minimum length, character requirements, expiration, reuse prevention) based on CloudFormation custom resource parameters.
+- [>] Task 6: Implement IAM password policy configuration that sets account-level password policy settings (minimum length, character requirements, expiration, reuse prevention) based on CloudFormation custom resource parameters.
 
 - [ ] Task 7: Implement S3 block public access configuration that enables S3 Block Public Access settings at the account level across multiple regions based on CloudFormation parameters.
 

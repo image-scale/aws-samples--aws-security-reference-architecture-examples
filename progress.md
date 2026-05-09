@@ -27,3 +27,10 @@
 **Commit**: Add region management utilities for determining which AWS regions are enabled
 **Acceptance**: 5/5 criteria met
 **Verification**: tests FAIL on previous state (ModuleNotFoundError: sra.regions), PASS on current state
+
+## Round 5
+**Task**: Task 5 — Implement service-linked role management
+**Files created**: sra/iam.py, tests/test_iam.py
+**Commit**: Add service-linked role management for creating AWS service-linked roles
+**Acceptance**: 4/4 criteria met
+**Verification**: tests FAIL on previous state (ModuleNotFoundError: sra.iam), PASS on current state
