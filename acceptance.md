@@ -84,3 +84,12 @@
 - [x] Creates member accounts from organization accounts
 - [x] Configures publishing destination for findings (S3 bucket with KMS encryption)
 - [x] Lambda handler processes CloudFormation Create/Update/Delete events
+
+## Task 10: Macie organization configuration
+
+### Acceptance Criteria
+- [x] Enables Macie in delegated admin account across specified regions
+- [x] Creates member accounts from organization accounts with auto-enable
+- [x] Configures S3 export destination for classification results
+- [x] Handles disabling Macie and removing members on delete
+- [x] Lambda handler processes CloudFormation Create/Update/Delete events

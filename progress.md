@@ -62,3 +62,10 @@
 **Commit**: Add GuardDuty organization configuration for delegated admin, member accounts, features, and publishing destinations
 **Acceptance**: 5/5 criteria met
 **Verification**: tests FAIL on previous state (ModuleNotFoundError: sra.guardduty), PASS on current state
+
+## Round 10
+**Task**: Task 10 — Implement Macie organization configuration
+**Files created**: sra/macie.py, tests/test_macie.py
+**Commit**: Add Macie organization configuration for delegated admin, member accounts, and classification export
+**Acceptance**: 5/5 criteria met
+**Verification**: tests FAIL on previous state (ModuleNotFoundError: sra.macie), PASS on current state
