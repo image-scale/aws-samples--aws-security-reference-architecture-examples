@@ -102,3 +102,12 @@
 - [x] Creates member accounts from organization accounts
 - [x] Handles disabling SecurityHub and removing members on delete
 - [x] Lambda handler processes CloudFormation Create/Update/Delete events
+
+## Task 12: Register delegated administrator
+
+### Acceptance Criteria
+- [x] Registers delegated administrator account for AWS services in AWS Organizations
+- [x] Enables AWS service access for specified service principals
+- [x] Handles deregistration of delegated admin and disabling service access on delete
+- [x] Supports multiple service principals (access-analyzer, config, macie, securityhub, etc.)
+- [x] Lambda handler processes CloudFormation Create/Update/Delete events

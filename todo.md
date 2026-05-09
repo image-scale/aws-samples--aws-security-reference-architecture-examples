@@ -26,4 +26,4 @@ Build the AWS SRA library starting with core user-facing functionality. The prim
 
 - [x] Task 11: Implement SecurityHub organization configuration that enables SecurityHub with delegated administration, configures security standards (CIS, PCI, NIST, Security Best Practices), manages member accounts, and handles SNS-based member account notifications.
 
-- [>] Task 12: Implement register delegated administrator functionality that registers and deregisters delegated administrator accounts for AWS services within AWS Organizations, enabling centralized security management.
+- [x] Task 12: Implement register delegated administrator functionality that registers and deregisters delegated administrator accounts for AWS services within AWS Organizations, enabling centralized security management.

@@ -76,3 +76,10 @@
 **Commit**: Add SecurityHub organization configuration for delegated admin, standards, and member accounts
 **Acceptance**: 5/5 criteria met
 **Verification**: tests FAIL on previous state (ModuleNotFoundError: sra.securityhub), PASS on current state
+
+## Round 12
+**Task**: Task 12 — Implement register delegated administrator
+**Files created**: sra/delegated_admin.py, tests/test_delegated_admin.py
+**Commit**: Add delegated administrator registration for AWS Organizations services
+**Acceptance**: 5/5 criteria met
+**Verification**: tests FAIL on previous state (ModuleNotFoundError: sra.delegated_admin), PASS on current state
