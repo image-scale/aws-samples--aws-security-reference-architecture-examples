@@ -41,3 +41,17 @@
 **Commit**: Add IAM password policy configuration that sets account-level password policy settings
 **Acceptance**: 5/5 criteria met
 **Verification**: tests FAIL on previous state (ModuleNotFoundError: sra.password_policy), PASS on current state
+
+## Round 7
+**Task**: Task 7 — Implement S3 block public access configuration
+**Files created**: sra/s3_block_public_access.py, tests/test_s3_block_public_access.py
+**Commit**: Add S3 Block Public Access configuration that enables S3 BPA settings at the account level
+**Acceptance**: 4/4 criteria met
+**Verification**: tests FAIL on previous state (ModuleNotFoundError: sra.s3_block_public_access), PASS on current state
+
+## Round 8
+**Task**: Task 8 — Implement common prerequisites management
+**Files created**: sra/prerequisites.py, tests/test_prerequisites.py
+**Commit**: Add common prerequisites management for creating SSM parameters with organization, account, and region data
+**Acceptance**: 4/4 criteria met
+**Verification**: tests FAIL on previous state (ModuleNotFoundError: sra.prerequisites), PASS on current state

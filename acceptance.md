@@ -63,7 +63,15 @@
 ## Task 7: S3 block public access configuration
 
 ### Acceptance Criteria
-- [ ] set_block_public_access() enables S3 Block Public Access settings at account level
-- [ ] Configures all four BPA settings (BlockPublicAcls, IgnorePublicAcls, BlockPublicPolicy, RestrictPublicBuckets)
-- [ ] Works across multiple regions when provided a region list
-- [ ] Lambda handler processes CloudFormation Create/Update events
+- [x] set_block_public_access() enables S3 Block Public Access settings at account level
+- [x] Configures all four BPA settings (BlockPublicAcls, IgnorePublicAcls, BlockPublicPolicy, RestrictPublicBuckets)
+- [x] Works across multiple regions when provided a region list
+- [x] Lambda handler processes CloudFormation Create/Update events
+
+## Task 8: Common prerequisites management
+
+### Acceptance Criteria
+- [x] Creates SSM parameters with organization data (org ID, root OU ID, management account)
+- [x] Creates SSM parameters with account data (audit account, log archive account)
+- [x] Creates SSM parameters with region data (enabled regions, customer regions)
+- [x] Lambda handler processes CloudFormation Create/Update events

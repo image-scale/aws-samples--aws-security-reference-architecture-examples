@@ -16,11 +16,11 @@ Build the AWS SRA library starting with core user-facing functionality. The prim
 
 - [x] Task 6: Implement IAM password policy configuration that sets account-level password policy settings (minimum length, character requirements, expiration, reuse prevention) based on CloudFormation custom resource parameters.
 
-- [>] Task 7: Implement S3 block public access configuration that enables S3 Block Public Access settings at the account level across multiple regions based on CloudFormation parameters.
+- [x] Task 7: Implement S3 block public access configuration that enables S3 Block Public Access settings at the account level across multiple regions based on CloudFormation parameters.
 
-- [ ] Task 8: Implement common prerequisites management that gathers organization data, identifies Control Tower regions, and creates SSM parameters in multiple regions to store configuration information for other SRA solutions.
+- [x] Task 8: Implement common prerequisites management that gathers organization data, identifies Control Tower regions, and creates SSM parameters in multiple regions to store configuration information for other SRA solutions.
 
-- [ ] Task 9: Implement GuardDuty organization configuration that sets up delegated administrator accounts, enables GuardDuty features (S3 logs, EKS audit, malware protection, runtime monitoring), creates member accounts, and configures publishing destinations.
+- [>] Task 9: Implement GuardDuty organization configuration that sets up delegated administrator accounts, enables GuardDuty features (S3 logs, EKS audit, malware protection, runtime monitoring), creates member accounts, and configures publishing destinations.
 
 - [ ] Task 10: Implement Macie organization configuration that enables Macie in a delegated admin account, configures member accounts, sets up publishing destinations for findings, and handles disabling Macie when requested.
 
